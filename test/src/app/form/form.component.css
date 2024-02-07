@@ -1,0 +1,91 @@
+.container {
+    border: 1px solid #154374;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+   
+ 
+  
+  .Table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    border: 1px solid #154374; 
+    background: #D0E4F5;
+    text-align: center;
+  }
+  
+  .Table th {
+    background-color: #154374;
+    color: white;
+    padding: 10px;
+    font-weight: normal;
+    
+    
+
+    
+  }
+  
+  .Table td {
+    
+    padding: 10px;
+  }
+  
+  .Table tbody td {
+    font-size: 13px;
+  }
+  
+  
+  
+  .Table input {
+    width: 75%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #154374;
+    border-radius: 4px;
+   
+    
+  }
+  
+  .Table button {
+    width: 100%;
+    background-color: #154374;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+    
+  }
+
+
+  
+  .Table button:hover {
+    background-color: #0d2c54;
+  }
+  
+  .buttonRow td {
+    text-align: center;
+    border: 0;
+   
+  }
+
+  .cdk-drag:not([cdkDragDisabled]) {
+    cursor: move; /* Curseur de déplacement pour indiquer la possibilité de glisser */
+  }
+  
+  /* Style pour les éléments lorsqu'ils sont survolés et déplaçables */
+  .cdk-drag:not([cdkDragDisabled]):hover {
+    background-color: #f0f0f0; /* Changement optionnel de fond pour indiquer l'élément actif */
+  }
+  
+  
+
+
+
+  
+  

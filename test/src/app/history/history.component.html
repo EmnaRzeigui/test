@@ -1,0 +1,26 @@
+<div class="container">
+    <table class="Table">
+        <thead>
+        <tr>
+            <th>User</th>
+            <th>Date envoi</th>
+            <th>Message</th>
+            <th></th>
+            <th></th>
+            
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr    *ngFor="let email of emailHistory">
+            <td><input type="text" name="user" [value]="email.to" readonly/></td>
+            <td><input type="text" name="date"[value]="email.sentAt" readonly/> </td>
+            <td><input type="text" name="message"[value]="email.body" readonly/></td>
+            <td></td>
+            <td></td>
+        </tr>
+   
+        
+        </tbody>
+    </table>
+</div>

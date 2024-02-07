@@ -1,0 +1,35 @@
+<div class="predefined-msg-btn-container">
+    <button (click)="displayMessage()" class="predefined-msg-btn">Message Prédéfini</button>
+  </div>
+  
+  
+<div *ngIf="showMessage" class="message-box"  >
+    
+  {{ predefinedMessage }}
+</div>
+
+
+<div class="send-container"    
+    cdkDropList 
+    id="done"
+    #done="cdkDropList"
+    [cdkDropListData]="dropList"
+    [cdkDropListConnectedTo]="['cell']"
+    (cdkDropListDropped)="drop($event)">
+     
+    <div *ngFor="let item of dropList"   cdkDrag> 
+       <input type="text" name="user" class="input" [(ngModel)]="item.user"  cdkDrag   />   
+      
+    </div>
+
+
+    
+
+  <button class="send-button" (click)="sendEmails()" >Envoyer</button>
+</div>
+
+
+
+<app-form  ></app-form>
+
+  

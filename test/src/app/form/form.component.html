@@ -1,0 +1,54 @@
+<div class="container">
+    <table class="Table">
+        <thead>
+        <tr>
+            <th>User</th>
+            <th>Matricule</th>
+            <th>Email</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+
+
+        
+
+        
+         
+        <tr cdkDropList
+            id="cell"
+            #cell="cdkDropList"
+            [cdkDropListData]="items"
+            [cdkDropListConnectedTo]="['done']"
+            (cdkDropListDropped)="drop($event)"
+            *ngFor="let item of items"  >  
+            
+            
+            <td  ><input type="text" name="user"  [(ngModel)]="item.user" [readonly]="!isEditing"  cdkDrag [cdkDragDisabled]="isEditing || !isItemComplete(item)" /></td>
+            <td  ><input type="text" name="matricule"  [(ngModel)]="item.matricule" [readonly]="!isEditing" /></td>
+            <td  ><input type="email" name="email" [(ngModel)]="item.email" [readonly]="!isEditing" /></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        
+        
+    
+        <tr class="buttonRow" >
+           <td></td>
+           <td><button (click)="onDelete()">Supprimer</button>  </td> 
+           <td><button (click)="onModify()"> {{ isEditing ? 'Terminer' : 'Modifier' }} </button></td>
+           <td><button (click)="onAdd()">Ajouter</button></td>
+           <td></td>
+           
+        </tr>
+
+
+        
+
+
+        
+        </tbody>
+    </table>
+</div>

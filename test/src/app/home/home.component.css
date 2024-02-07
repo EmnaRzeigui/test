@@ -1,0 +1,71 @@
+
+/* Styles for the predefined message display */
+.predefined-msg-btn-container {
+    display: flex;
+    justify-content: flex-end; /* Cela aligne le bouton à droite */
+  }
+  
+  .predefined-msg-btn {
+    margin: 10px;
+    padding: 10px 50px;
+    border: none;
+    background-color: #154374;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+   
+  }
+  
+  .predefined-msg-btn:hover, .predefined-msg-btn:focus {
+    color: #0056b3;
+    background-color: #d1e9ff;
+    border-color: #d1e9ff;
+  }
+  
+  .message-box {
+    text-align: center;
+    border: 1px solid #154374;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+
+/* Styles for the send container */
+
+.send-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 10px;
+    border: 1px solid #154374;
+    border-radius: 5px;
+  }
+  
+  .send-button {
+    margin-left: auto;
+    padding: 10px 20px;
+    background-color: #154374;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send-button:hover {
+    color: #0056b3;
+    background-color: #d1e9ff;
+    border-color: #d1e9ff;
+  }
+  .input {
+    width: 75%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #154374;
+    border-radius: 4px;
+
+   
+    
+  }
