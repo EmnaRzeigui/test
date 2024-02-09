@@ -15,7 +15,8 @@
     #done="cdkDropList"
     [cdkDropListData]="dropList"
     [cdkDropListConnectedTo]="['cell']"
-    (cdkDropListDropped)="drop($event)">
+    (cdkDropListDropped)="drop($event)"
+    >
      
     <div *ngFor="let item of dropList"   cdkDrag> 
        <input type="text" name="user" class="input" [(ngModel)]="item.user"  cdkDrag   />   

@@ -1,3 +1,5 @@
+// ce composant permet de basculer entre la page d'accueil et l'historique 
+
 import { Component } from '@angular/core';
 
 @Component({
